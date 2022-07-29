@@ -129,8 +129,8 @@ while True:
     if players_statistics:
         for object_id, possession_missed in players_statistics.items():
             possession, missed = possession_missed['Possession'], possession_missed['Missed']
-            players_info[object_id]['Possession'] += possession
-            players_info[object_id]['Missed'] += missed
+            players_info[object_id]['Possession'] = possession
+            players_info[object_id]['Missed'] = missed
 
     # Draw Players
     players_boxes = []
